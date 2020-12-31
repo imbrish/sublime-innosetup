@@ -5,14 +5,10 @@ file_extensions: [iss, isl]
 scope: source.inno
 
 variables:
-  sections: '(?:Code|Components|CustomMessages|Dirs|Files|Icons|INI|InstallDelete|LangOptions|Languages|Messages|Registry|Run|Setup|Tasks|Types|UninstallDelete|UninstallRun)'
   setup_directives: '(?:AllowCancelDuringInstall|AllowNetworkDrive|AllowNoIcons|AllowRootDirectory|AllowUNCPath|AlwaysRestart|AlwaysShowComponentsList|AlwaysShowDirOnReadyPage|AlwaysShowGroupOnReadyPage|AlwaysUsePersonalGroup|AppComments|AppContact|AppCopyright|AppendDefaultDirName|AppendDefaultGroupName|AppId|AppModifyPath|AppMutex|AppName|AppPublisher|AppPublisherURL|AppReadmeFile|AppSupportPhone|AppSupportURL|AppUpdatesURL|AppVerName|AppVersion|ArchitecturesAllowed|ArchitecturesInstallIn64BitMode|ASLRCompatible|BackColor|BackColor2|BackColorDirection|BackSolid|ChangesAssociations|ChangesEnvironment|CloseApplications|CloseApplicationsFilter|Compression|CompressionThreads|CreateAppDir|CreateUninstallRegKey|DefaultDialogFontName|DefaultDirName|DefaultGroupName|DefaultUserInfoName|DefaultUserInfoOrg|DefaultUserInfoSerial|DEPCompatible|DirExistsWarning|DisableDirPage|DisableFinishedPage|DisableProgramGroupPage|DisableReadyMemo|DisableReadyPage|DisableStartupPrompt|DisableWelcomePage|DiskClusterSize|DiskSliceSize|DiskSpanning|EnableDirDoesntExistWarning|Encryption|ExtraDiskSpaceRequired|FlatComponentsList|InfoAfterFile|InfoBeforeFile|InternalCompressLevel|LanguageDetectionMethod|LicenseFile|LZMAAlgorithm|LZMABlockSize|LZMADictionarySize|LZMAMatchFinder|LZMANumBlockThreads|LZMANumFastBytes|LZMAUseSeparateProcess|MergeDuplicateFiles|MinVersion|MissingRunOnceIdsWarning|OnlyBelowVersion|Output|OutputBaseFilename|OutputDir|OutputManifestFile|Password|PrivilegesRequired|PrivilegesRequiredOverridesAllowed|ReserveBytes|RestartApplications|RestartIfNeededByRun|SetupIconFile|SetupLogging|SetupMutex|ShowComponentSizes|ShowLanguageDialog|ShowTasksTreeLines|SignedUninstaller|SignedUninstallerDir|SignTool|SignToolMinimumTimeBetween|SignToolRetryCount|SignToolRetryDelay|SignToolRunMinimized|SlicesPerDisk|SolidCompression|SourceDir|TerminalServicesAware|TimeStampRounding|TimeStampsInUTC|TouchDate|TouchTime|Uninstallable|UninstallDisplayIcon|UninstallDisplayName|UninstallDisplaySize|UninstallFilesDir|UninstallLogMode|UninstallRestartComputer|UpdateUninstallLogAppName|UsedUserAreasWarning|UsePreviousAppDir|UsePreviousGroup|UsePreviousLanguage|UsePreviousPrivigeles|UsePreviousPrivileges|UsePreviousSetupType|UsePreviousTasks|UsePreviousUserInfo|UserInfoPage|UseSetupLdr|VersionInfoCompany|VersionInfoCopyright|VersionInfoDescription|VersionInfoOriginalFileName|VersionInfoProductName|VersionInfoProductTextVersion|VersionInfoProductVersion|VersionInfoTextVersion|VersionInfoVersion|WindowResizable|WindowShowCaption|WindowStartMaximized|WindowVisible|WizardImageAlphaFormat|WizardImageFile|WizardImageStretch|WizardResizable|WizardSizePercent|WizardSmallImageFile|WizardStyle)'
   setup_directives_deprecated: '(?:AlwaysCreateUninstallIcon|DisableAppendDir|DontMergeDuplicateFiles|MessagesFile|UninstallIconFile|UninstallIconName|UninstallStyle|WizardImageBackColor|WizardSmallImageBackColor)'
   lang_options_directives: '(?:CopyrightFontName|CopyrightFontSize|DialogFontName|DialogFontSize|LanguageCodePage|LanguageID|LanguageName|RightToLeft|TitleFontName|TitleFontSize|WelcomeFontName|WelcomeFontSize)'
   directive_keywords: '(?:admin|append|arm64|auto|BT|bzip|bzip\/\d|clAqua|classic|clBlack|clBlue|clFuchsia|clGray|clGreen|clLime|clMaroon|clNavy|clOlive|clPurple|clRed|clSilver|clTeal|clWhite|clYellow|commandline|current|defined|dialog|force|HC|ia64|lefttoright|locale|lowest|lzma|lzma2|lzma2\/fast|lzma2\/max|lzma2\/normal|lzma2\/ultra|lzma2\/ultra64|lzma\/fast|lzma\/max|lzma\/normal|lzma\/ultra|lzma\/ultra64|modern|new|no|none|overwrite|premultiplied|toptobottom|uilanguage|x64|x86|yes|zip|zip\/\d)'
-  parameters: '(?:AfterInstall|AppUserModelID|AppUserModelToastActivatorCLSID|Attribs|BeforeInstall|Check|Comment|Components|CopyMode|Description|DestDir|DestName|Excludes|ExternalSize|ExtraDiskSpaceRequired|Filename|Flags|FontInstall|GroupDescription|HotKey|IconFilename|IconIndex|InfoAfterFile|InfoBeforeFile|Key|Languages|LicenseFile|MessagesFile|MinVersion|Name|OnlyBelowVersion|Parameters|Permissions|Root|RunOnceId|Section|Source|StatusMsg|String|StrongAssemblyName|Subkey|Tasks|Type|Types|ValueData|ValueName|ValueType|Verb|WorkingDir)'
-  parameter_keywords: '(?:admins|authusers|binary|compact|creatorowner|custom|dirifempty|dword|edit|everyone|expandsz|files|filesandordirs|full|guests|hidden|HKA(?:32|64)?|HKCC(?:32|64)?|HKCR(?:32|64)?|HKCU(?:32|64)?|HKLM(?:32|64)?|HKU(?:32|64)?|modify|multisz|networkservice|none|notcontentindexed|open|print|printto|qword|read|readexec|readonly|service|string|system|users)'
-  parameter_flags: '(?:32bit|64bit|allowunsafefiles|checkablealone|checkedonce|closeonexit|comparetimestamp|confirmoverwrite|createallsubdirs|createkeyifdoesntexist|createonlyiffileexists|createvalueifdoesntexist|deleteafterinstall|deletekey|deletevalue|disablenouninstallwarning|dontcloseonexit|dontcopy|dontcreatekey|dontinheritcheck|dontlogparameters|dontverifychecksum|excludefromshowinnewinstall|exclusive|external|fixed|foldershortcut|fontisnttruetype|gacinstall|hidewizard|ignoreversion|iscustom|isreadme|nocompression|noencryption|noerror|noregerror|nowait|onlyifdestfileexists|onlyifdoesntexist|overwritereadonly|postinstall|preservestringtype|preventpinning|promptifolder|recursesubdirs|regserver|regtypelib|replacesameversion|restart|restartreplace|runascurrentuser|runasoriginaluser|runhidden|runmaximized|runminimized|setntfscompression|sharedfile|shellexec|sign|signonce|skipifdoesntexist|skipifnotsilent|skipifsilent|skipifsourcedoesntexist|solidbreak|sortfilesbyextension|sortfilesbyname|touch|unchecked|uninsalwaysuninstall|uninsclearvalue|uninsdeleteentry|uninsdeletekey|uninsdeletekeyifempty|uninsdeletesection|uninsdeletesectionifempty|uninsdeletevalue|uninsneveruninstall|uninsnosharedfileprompt|uninsremovereadonly|uninsrestartdelete|unsetntfscompression|useapppaths|waituntilidle|waituntilterminated)'
   constants: '(?:\\|app|autoappdata|autocf|autocf32|autocf64|autodesktop|autodocs|autofonts|autopf|autopf32|autopf64|autoprograms|autostartmenu|autostartup|autotemplates|cmd|commonappdata|commoncf|commoncf32|commoncf64|commondesktop|commondocs|commonfonts|commonpf|commonpf32|commonpf64|commonprograms|commonstartmenu|commonstartup|commontemplates|computername|dao|dotnet11|dotnet20|dotnet2032|dotnet2064|dotnet40|dotnet4032|dotnet4064|group|groupname|hwnd|language|localappdata|log|sd|src|srcexe|sys|sysnative|sysuserinfoname|sysuserinfoorg|syswow64|tmp|uninstallexe|userappdata|usercf|userdesktop|userdocs|userfavorites|userfonts|userinfoname|userinfoorg|userinfoserial|username|userpf|userprograms|usersavedgames|usersendto|userstartmenu|userstartup|usertemplates|win|wizardhwnd)'
   constants_deprecated: '(?:cf|cf32|cf64|commonfavorites|fonts|pf|pf32|pf64|sendto)'
   messages: '(?:AbortRetryIgnoreCancel|AbortRetryIgnoreIgnore|AbortRetryIgnoreRetry|AbortRetryIgnoreSelectAction|AboutSetupMenuItem|AboutSetupMessage|AboutSetupNote|AboutSetupTitle|AdminPrivilegesRequired|ApplicationsFound|ApplicationsFound2|BadDirName32|BadGroupName|BeveledLabel|BrowseDialogLabel|BrowseDialogTitle|ButtonBack|ButtonBrowse|ButtonCancel|ButtonFinish|ButtonInstall|ButtonNewFolder|ButtonNext|ButtonNo|ButtonNoToAll|ButtonOK|ButtonStopDownload|ButtonWizardBrowse|ButtonYes|ButtonYesToAll|CannotContinue|CannotInstallToNetworkDrive|CannotInstallToUNCPath|ChangeDiskTitle|ClickFinish|ClickNext|CloseApplications|CompactInstallation|ComponentsDiskSpaceGBLabel|ComponentsDiskSpaceMBLabel|ComponentSize1|ComponentSize2|ConfirmDeleteSharedFile2|ConfirmDeleteSharedFileTitle|ConfirmTitle|ConfirmUninstall|CustomInstallation|DirDoesntExist|DirDoesntExistTitle|DirExists|DirExistsTitle|DirNameTooLong|DiskSpaceGBLabel|DiskSpaceMBLabel|DiskSpaceWarning|DiskSpaceWarningTitle|DontCloseApplications|DownloadingLabel|ErrorChangingAttr|ErrorCloseApplications|ErrorCopying|ErrorCreatingDir|ErrorCreatingTemp|ErrorDownloadAborted|ErrorDownloadFailed|ErrorDownloadSizeFailed|ErrorExecutingProgram|ErrorFileHash1|ErrorFileHash2|ErrorFileSize|ErrorFunctionFailed|ErrorFunctionFailedNoCode|ErrorFunctionFailedWithMessage|ErrorIniEntry|ErrorInternal2|ErrorOpeningReadme|ErrorProgress|ErrorReadingExistingDest|ErrorReadingSource|ErrorRegCreateKey|ErrorRegisterServer|ErrorRegisterTypeLib|ErrorRegOpenKey|ErrorRegSvr32Failed|ErrorRegWriteKey|ErrorRenamingTemp|ErrorReplacingExistingFile|ErrorRestartingComputer|ErrorRestartReplace|ErrorTitle|ErrorTooManyFilesInDir|ExistingFileNewer2|ExistingFileNewerKeepExisting|ExistingFileNewerOverwriteExisting|ExistingFileNewerOverwriteOrKeepAll|ExistingFileNewerSelectAction|ExistingFileReadOnly2|ExistingFileReadOnlyKeepExisting|ExistingFileReadOnlyRetry|ExitSetupMessage|ExitSetupTitle|FileAbortRetryIgnoreIgnoreNotRecommended|FileAbortRetryIgnoreSkipNotRecommended|FileExists2|FileExistsKeepExisting|FileExistsOverwriteExisting|FileExistsOverwriteOrKeepAll|FileExistsSelectAction|FileNotInDir2|FinishedHeadingLabel|FinishedLabel|FinishedLabelNoIcons|FinishedRestartLabel|FinishedRestartMessage|FullInstallation|GroupNameTooLong|HelpTextNote|IncorrectPassword|InfoAfterClickLabel|InfoAfterLabel|InfoBeforeClickLabel|InfoBeforeLabel|InformationTitle|InstallingLabel|InvalidDirName|InvalidDrive|InvalidGroupName|InvalidParameter|InvalidPath|LastErrorMessage|LdrCannotCreateTemp|LdrCannotExecTemp|LicenseAccepted|LicenseLabel|LicenseLabel3|LicenseNotAccepted|MustEnterGroupName|NewFolderName|NoProgramGroupCheck2|NoRadio|NotOnThisPlatform|NoUninstallWarning|NoUninstallWarningTitle|OnlyAdminCanUninstall|OnlyOnTheseArchitectures|OnlyOnThisPlatform|PasswordEditLabel|PasswordLabel1|PasswordLabel3|PathLabel|PowerUserPrivilegesRequired|PrepareToInstallNeedsRestart|PreparingDesc|PreviousInstallNotCompleted|PrivilegesRequiredOverrideAllUsers|PrivilegesRequiredOverrideAllUsersRecommended|PrivilegesRequiredOverrideCurrentUser|PrivilegesRequiredOverrideCurrentUserRecommended|PrivilegesRequiredOverrideInstruction|PrivilegesRequiredOverrideText1|PrivilegesRequiredOverrideText2|PrivilegesRequiredOverrideTitle|ReadyLabel1|ReadyLabel2a|ReadyLabel2b|ReadyMemoComponents|ReadyMemoDir|ReadyMemoGroup|ReadyMemoTasks|ReadyMemoType|ReadyMemoUserInfo|RunEntryExec|RunEntryShellExec|SelectComponentsDesc|SelectComponentsLabel2|SelectDirBrowseLabel|SelectDirDesc|SelectDirectoryLabel|SelectDirLabel3|SelectDiskLabel2|SelectLanguageLabel|SelectLanguageTitle|SelectStartMenuFolderBrowseLabel|SelectStartMenuFolderDesc|SelectStartMenuFolderLabel3|SelectTasksDesc|SelectTasksLabel2|SetupAborted|SetupAlreadyRunning|SetupAppRunningError|SetupAppTitle|SetupFileCorrupt|SetupFileCorruptOrWrongVer|SetupFileMissing|SetupLdrStartupMessage|SetupWindowTitle|SharedFileLocationLabel|SharedFileNameLabel|ShowReadmeCheck|ShutdownBlockReasonInstallingApp|ShutdownBlockReasonUninstallingApp|SourceDoesntExist|SourceIsCorrupted|StatusClosingApplications|StatusCreateDirs|StatusCreateIcons|StatusCreateIniEntries|StatusCreateRegistryEntries|StatusExtractFiles|StatusRegisterFiles|StatusRestartingApplications|StatusRollback|StatusRunProgram|StatusSavingUninstall|StatusUninstalling|StopDownload|TranslatorNote|UninstallAppFullTitle|UninstallAppRunningError|UninstallAppTitle|UninstallDataCorrupted|UninstallDisplayNameMark|UninstallDisplayNameMark32Bit|UninstallDisplayNameMark64Bit|UninstallDisplayNameMarkAllUsers|UninstallDisplayNameMarkCurrentUser|UninstallDisplayNameMarks|UninstalledAll|UninstalledAndNeedsRestart|UninstalledMost|UninstallNotFound|UninstallOnlyOnWin64|UninstallOpenError|UninstallStatusLabel|UninstallUnknownEntry|UninstallUnsupportedVer|UserInfoDesc|UserInfoName|UserInfoNameRequired|UserInfoOrg|UserInfoSerial|WelcomeLabel1|WelcomeLabel2|WindowsServicePackRequired|WindowsVersionNotSupported|WinVersionTooHighError|WinVersionTooLowError|WizardInfoAfter|WizardInfoBefore|WizardInstalling|WizardLicense|WizardPassword|WizardPreparing|WizardReady|WizardSelectComponents|WizardSelectDir|WizardSelectProgramGroup|WizardSelectTasks|WizardUninstalling|WizardUserInfo|YesRadio)'
@@ -20,34 +16,11 @@ variables:
 contexts:
   # Source.
   main:
-    # Preprocessor code.
+    # General.
+    - include: line-spanning
     - include: preprocessor
-    # Messages section.
-    - match: '(?i)^\s*(\[Messages\])\s*$'
-      captures:
-        1: entity.name.namespace.inno
-      push:
-        - meta_scope: meta.namespace.messages.inno
-        - match: '(?i)^\s*(?:([a-z]{2})(\.))?(?:({{messages}})|(\w*))\s*(?==)'
-          captures:
-            1: keyword.other.inno
-            2: punctuation.accessor.inno
-            3: keyword.other.inno
-            4: meta.unrecognized.directive.inno
-        - include: messages-common
-    # CustomMessages section.
-    - match: '(?i)^\s*(\[CustomMessages\])\s*$'
-      captures:
-        1: entity.name.namespace.inno
-      push:
-        - meta_scope: meta.namespace.custom-messages.inno
-        - match: '(?i)^\s*(?:([a-z]{2})(\.))?(\w*)\s*(?==)'
-          captures:
-            1: keyword.other.inno
-            2: punctuation.accessor.inno
-            3: keyword.other.inno
-        - include: messages-common
-    # Code section.
+    - include: comment
+    # Sections.
     - match: '(?i)^\s*(\[Code\])\s*$'
       captures:
         1: entity.name.namespace.inno
@@ -58,65 +31,112 @@ contexts:
       with_prototype:
         - include: preprocessor
         - include: section-end
-    # Other or unrecognized section.
-    - match: '(?i)^\s*(?:(\[{{sections}}\])|(\[\w*\]))\s*$'
+    - match: '(?i)^\s*(\[Components\])\s*$'
       captures:
         1: entity.name.namespace.inno
-        2: meta.unrecognized.section.inno
-    # Comment.
-    - include: comment
-    # Directive expecting boolean expression.
-    - match: '(?i)^\s*(ChangesAssociations|ChangesEnvironment|CreateUninstallRegKey|Uninstallable)\s*(=)\s*'
-      captures:
-        1: keyword.other.inno
-        2: keyword.operator.assignment.inno
       push:
-        - meta_content_scope: source.pascal.embedded.inno
-        - match: '(?i)\s*(?:yes|no)\s*(?=$)'
-          scope: constant.language.inno
-        - include: scope:source.pascal.inno
-      with_prototype:
-        - include: preprocessor
-        - include: line-end
-    # Directive expecting keyword or value.
-    - match: '(?i)^\s*(?:({{setup_directives}}|{{setup_directives_deprecated}}|{{lang_options_directives}})|([^="''\s]*))\s*(=)\s*'
+        - meta_scope: meta.namespace.components.inno
+        - include: components-section
+    - match: '(?i)^\s*(\[CustomMessages\])\s*$'
       captures:
-        1: keyword.other.inno
-        2: meta.unrecognized.directive.inno
-        3: keyword.operator.assignment.inno
-      push: directive-value
-    # Parameter expecting boolean expression.
-    - match: '(?i)\b(AfterInstall|BeforeInstall|Check|Components|Tasks)\s*(:)\s*'
-      captures:
-        1: keyword.other.inno
-        2: keyword.operator.assignment.inno
+        1: entity.name.namespace.inno
       push:
-        - meta_content_scope: source.pascal.embedded.inno
-        - include: separator
-        - include: scope:source.pascal.inno
-      with_prototype:
-        - include: preprocessor
-        - include: line-end
-    # Parameter expecting keywords.
-    - match: '(?i)\b(Attribs|Components|Root|Type|Types|ValueType|Verb)\s*(:)\s*'
+        - meta_scope: meta.namespace.custom-messages.inno
+        - include: custom-messages-section
+    - match: '(?i)^\s*(\[Dirs\])\s*$'
       captures:
-        1: keyword.other.inno
-        2: keyword.operator.assignment.inno
-      push: parameter-keywords
-    # Parameter expecting flags.
-    - match: '(?i)\b(Flags)\s*(:)\s*'
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.dirs.inno
+        - include: dirs-section
+    - match: '(?i)^\s*(\[Files\])\s*$'
       captures:
-        1: keyword.other.inno
-        2: keyword.operator.assignment.inno
-      push: parameter-flags
-    # Parameter expecting value.
-    - match: '(?i)\b(?:({{parameters}})|([^:"''\s]*))\s*(:)\s*'
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.files.inno
+        - include: files-section
+    - match: '(?i)^\s*(\[Icons\])\s*$'
       captures:
-        1: keyword.other.inno
-        2: meta.unrecognized.parameter.inno
-        3: keyword.operator.assignment.inno
-      push: parameter-value
-    # Loose value.
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.icons.inno
+        - include: icons-section
+    - match: '(?i)^\s*(\[INI\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.ini.inno
+        - include: ini-section
+    - match: '(?i)^\s*(\[InstallDelete\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.install-delete.inno
+        - include: uninstall-delete-section
+    - match: '(?i)^\s*(\[LangOptions\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.lang-options.inno
+        - include: lang-options-section
+    - match: '(?i)^\s*(\[Languages\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.languages.inno
+        - include: languages-section
+    - match: '(?i)^\s*(\[Messages\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.messages.inno
+        - include: messages-section
+    - match: '(?i)^\s*(\[Registry\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.registry.inno
+        - include: registry-section
+    - match: '(?i)^\s*(\[Run\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.run.inno
+        - include: run-section
+    - match: '(?i)^\s*(\[Setup\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.setup.inno
+        - include: setup-section
+    - match: '(?i)^\s*(\[Tasks\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.tasks.inno
+        - include: tasks-section
+    - match: '(?i)^\s*(\[Types\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.types.inno
+        - include: types-section
+    - match: '(?i)^\s*(\[UninstallDelete\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.uninstall-delete.inno
+        - include: uninstall-delete-section
+    - match: '(?i)^\s*(\[UninstallRun\])\s*$'
+      captures:
+        1: entity.name.namespace.inno
+      push:
+        - meta_scope: meta.namespace.uninstall-run.inno
+        - include: uninstall-run-section
+    - match: '(?i)^\s*(\[\w*\])\s*$'
+      captures:
+        1: meta.unrecognized.section.inno
+    # Values.
     - include: separator
     - include: number
     - include: string
@@ -201,8 +221,80 @@ contexts:
         - meta_scope: comment.line.semicolon.inno
         - include: line-end
 
-  # Common matches for Messages and CustomMessages sections.
-  messages-common:
+  # End of section.
+  section-end:
+    - match: '(?i)^(?=\s*\[\w*\]\s*$)'
+      pop: true
+
+  # Setup section.
+  setup-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - match: '(?i)^\s*(ChangesAssociations|ChangesEnvironment|CreateUninstallRegKey|Uninstallable)\s*(=)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - meta_content_scope: source.pascal.embedded.inno
+        - match: '(?i)(?:yes|no)(?=\s*$)'
+          scope: constant.language.inno
+        - include: scope:source.pascal.inno
+      with_prototype:
+        - include: preprocessor
+        - include: line-end
+    - match: '(?i)^\s*(?:({{setup_directives}}|{{setup_directives_deprecated}})|(\w*))\s*(=)'
+      captures:
+        1: keyword.other.inno
+        2: meta.unrecognized.directive.inno
+        3: keyword.operator.assignment.inno
+      push: directive-value
+
+  # LangOptions section.
+  lang-options-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - match: '(?i)^\s*(?:([a-z]{2})(\.))?(?:({{lang_options_directives}})|(\w*))\s*(=)'
+      captures:
+        1: keyword.other.inno
+        2: punctuation.accessor.inno
+        3: keyword.other.inno
+        4: meta.unrecognized.directive.inno
+        5: keyword.operator.assignment.inno
+      push: directive-value
+
+  # Directive value.
+  directive-value:
+    - include: line-end
+    - match: '(?i)\s*\b{{directive_keywords}}\b'
+      scope: constant.language.inno
+    - include: number
+    - include: string
+
+  # Messages section.
+  messages-section:
+    - match: '(?i)^\s*(?:([a-z]{2})(\.))?(?:({{messages}})|(\w*))\s*(?==)'
+      captures:
+        1: keyword.other.inno
+        2: punctuation.accessor.inno
+        3: keyword.other.inno
+        4: meta.unrecognized.directive.inno
+    - include: messages-sections-common
+
+  # CustomMessages section.
+  custom-messages-section:
+    - match: '(?i)^\s*(?:([a-z]{2})(\.))?(\w*)\s*(?==)'
+      captures:
+        1: keyword.other.inno
+        2: punctuation.accessor.inno
+        3: keyword.other.inno
+    - include: messages-sections-common
+
+  # Common for Messages and CustomMessages sections.
+  messages-sections-common:
     - match: '='
       scope: keyword.operator.assignment.inno
       push:
@@ -220,32 +312,436 @@ contexts:
     - include: number
     - include: string
 
-  # End of section.
-  section-end:
-    - match: '(?i)^(?=\s*\[\w*\]\s*$)'
-      pop: true
+  # Languages section.
+  languages-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - match: '(?i)\b(Name|MessagesFile|LicenseFile|InfoBeforeFile|InfoAfterFile)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
 
-  # Directive value.
-  directive-value:
-    - include: line-end
-    - match: '(?i)\s*\b{{directive_keywords}}\b'
-      scope: constant.language.inno
-    - include: number
-    - include: string
+  # Types section.
+  types-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: check-parameter
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:iscustom)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Name|Description)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
 
-  # Parameter keywords.
-  parameter-keywords:
-    - include: line-end
-    - include: separator
-    - match: '(?i)\s*\b{{parameter_keywords}}\b'
-      scope: constant.language.inno
+  # Components section.
+  components-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: check-parameter
+    - match: '(?i)\b(Types)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:compact|custom|full)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:checkablealone|dontinheritcheck|exclusive|fixed|restart|disablenouninstallwarning)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Name|Description|ExtraDiskSpaceRequired)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
 
-  # Parameter flags.
-  parameter-flags:
-    - include: line-end
-    - include: separator
-    - match: '(?i)\s*\b{{parameter_flags}}\b'
-      scope: constant.language.inno
+  # Tasks section.
+  tasks-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: check-parameter
+    - include: components-parameter
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:checkablealone|checkedonce|dontinheritcheck|exclusive|restart|unchecked)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Name|Description|GroupDescription)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # Dirs section.
+  dirs-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - include: attribs-permissions-parameters
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:deleteafterinstall|setntfscompression|uninsalwaysuninstall|uninsneveruninstall|unsetntfscompression)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Name)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # Files section.
+  files-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - include: attribs-permissions-parameters
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:32bit|64bit|allowunsafefiles|comparetimestamp|confirmoverwrite|createallsubdirs|deleteafterinstall|dontcopy|dontverifychecksum|external|fontisnttruetype|gacinstall|ignoreversion|isreadme|nocompression|noencryption|noregerror|onlyifdestfileexists|onlyifdoesntexist|overwritereadonly|promptifolder|recursesubdirs|regserver|regtypelib|replacesameversion|restartreplace|setntfscompression|sharedfile|sign|signonce|skipifsourcedoesntexist|solidbreak|sortfilesbyextension|sortfilesbyname|touch|uninsneveruninstall|uninsnosharedfileprompt|uninsremovereadonly|uninsrestartdelete|unsetntfscompression)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Source|DestDir|DestName|Excludes|ExternalSize|CopyMode|FontInstall|StrongAssemblyName)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # Icons section.
+  icons-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:closeonexit|createonlyiffileexists|dontcloseonexit|excludefromshowinnewinstall|foldershortcut|preventpinning|runmaximized|runminimized|uninsneveruninstall|useapppaths)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Name|Filename|Parameters|WorkingDir|HotKey|Comment|IconFilename|IconIndex|AppUserModelID|AppUserModelToastActivatorCLSID)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # INI section.
+  ini-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:createkeyifdoesntexist|uninsdeleteentry|uninsdeletesection|uninsdeletesectionifempty)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Filename|Section|Key|String)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # UninstallDelete section.
+  uninstall-delete-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - match: '(?i)\b(Type)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:files|filesandordirs|dirifempty)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Name)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # Registry section.
+  registry-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - match: '(?i)\b(Root)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:HKA(?:32|64)?|HKCC(?:32|64)?|HKCR(?:32|64)?|HKCU(?:32|64)?|HKLM(?:32|64)?|HKU(?:32|64)?)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(ValueType)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:binary|dword|expandsz|multisz|none|qword|string)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Permissions)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:full|modify|read|admins|authusers|creatorowner|everyone|guests|networkservice|service|system|users)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:createvalueifdoesntexist|deletekey|deletevalue|dontcreatekey|noerror|preservestringtype|uninsclearvalue|uninsdeletekey|uninsdeletekeyifempty|uninsdeletevalue)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Subkey|ValueName|ValueData)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # Run section.
+  run-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - include: verb-parameter
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:32bit|64bit|dontlogparameters|hidewizard|nowait|postinstall|runascurrentuser|runasoriginaluser|runhidden|runmaximized|runminimized|shellexec|skipifdoesntexist|skipifnotsilent|skipifsilent|unchecked|waituntilidle|waituntilterminated)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Filename|Description|Parameters|WorkingDir|StatusMsg)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # UninstallRun section.
+  uninstall-run-section:
+    - include: line-spanning
+    - include: preprocessor
+    - include: comment
+    - include: section-end
+    - include: common-parameters
+    - include: components-parameter
+    - include: tasks-parameter
+    - include: check-parameter
+    - include: after-before-parameters
+    - include: verb-parameter
+    - match: '(?i)\b(Flags)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:32bit|64bit|dontlogparameters|hidewizard|nowait|runascurrentuser|runhidden|runmaximized|runminimized|shellexec|skipifdoesntexist|waituntilidle|waituntilterminated)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion|Filename|Parameters|WorkingDir|RunOnceId)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+    - include: unrecognized-parameter
+
+  # Languages, MinVersion and OnlyBelowVersion parameters.
+  common-parameters:
+    - match: '(?i)\b(Languages|MinVersion|OnlyBelowVersion)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
+
+  # Components parameter.
+  components-parameter:
+    - match: '(?i)\b(Components)\s*(?=:)'
+      captures:
+        1: keyword.other.inno
+    - include: pascal-parameters-common
+
+  # Tasks parameter.
+  tasks-parameter:
+    - match: '(?i)\b(Tasks)\s*(?=:)'
+      captures:
+        1: keyword.other.inno
+    - include: pascal-parameters-common
+
+  # Check parameter.
+  check-parameter:
+    - match: '(?i)\b(Check)\s*(?=:)'
+      captures:
+        1: keyword.other.inno
+    - include: pascal-parameters-common
+
+  # AfterInstall and BeforeInstall parameters.
+  after-before-parameters:
+    - match: '(?i)\b(AfterInstall|BeforeInstall)\s*(?=:)'
+      captures:
+        1: keyword.other.inno
+    - include: pascal-parameters-common
+
+  # Common for Pascal parameters.
+  pascal-parameters-common:
+    - match: ':'
+      scope: keyword.operator.assignment.inno
+      push:
+        - meta_content_scope: source.pascal.embedded.inno
+        - include: separator
+        - include: scope:source.pascal.inno
+      with_prototype:
+        - include: preprocessor
+        - include: line-end
+
+  # Attribs and Permissions parameters.
+  attribs-permissions-parameters:
+    - match: '(?i)\b(Attribs)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:readonly|hidden|system|notcontentindexed)\b'
+          scope: constant.language.inno
+    - match: '(?i)\b(Permissions)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:full|modify|readexec|admins|authusers|creatorowner|everyone|guests|networkservice|service|system|users)\b'
+          scope: constant.language.inno
+
+  # Verb parameter.
+  verb-parameter:
+    - match: '(?i)\b(Verb)\s*(:)'
+      captures:
+        1: keyword.other.inno
+        2: keyword.operator.assignment.inno
+      push:
+        - include: line-end
+        - include: separator
+        - match: '(?i)\b(?:edit|open|print|printto)\b'
+          scope: constant.language.inno
+
+  # Unrecognized parameter.
+  unrecognized-parameter:
+    - match: '(?i)(\w*)\s*(:)'
+      captures:
+        1: meta.unrecognized.parameter.inno
+        2: keyword.operator.assignment.inno
+      push: parameter-value
 
   # Parameter value.
   parameter-value:
